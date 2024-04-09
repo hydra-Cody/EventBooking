@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+     box-sizing: border-box;
+}
+
+
+/*------- Header */
+
+/*Title */
+.titile{
+    color: red;
+    text-decoration: none;
+    font-family: Impahsl(0, 100%, 50%) Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font: 30px solid ;
+    
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 5px;
+}
+.bottom-header{
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 5px;
+}
+.nav-item >ul{
+    display: flex;
+    list-style-type: none;
+}
+.nav-item > ul > li{
+    padding: 10px;
+}
+
+
+/*------------------Body */
+.body{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.heading{
+    width: 1000px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    font-size: 30px;
+    color: white;
+}
+
+.banner{
+    width: 100%;
+    margin: -10px;
+}
+
+.recommended::-webkit-scrollbar {
+  display: none;
+}
+.recommended{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    border: 1px solid bl;
+}
+.recommended-card{
+    position: relative;
+    border: 0.5px solid rgb(214, 225, 131);
+    background-color: rgb(240, 229, 229);
+}
+
+.recommended-text-left{
+    font-size: 12px;
+    width: 20px;
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    display: inline;
+    color: white;
+}
+.recommended-text-right{
+    font-size: 10px;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    color: white;
+}
+.recommended-img{
+    width: 250px;
+    height: 350px;
+    margin: -10px;
+}
