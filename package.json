@@ -2,9 +2,11 @@
   "name": "food",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   "scripts": {
+    "start": "parcel index.html -p 3000 --open",
+    "build:parcel": "parcel build index.html --public-url ./ --no-source-maps",
+    "build": "npm run clean && npm run build:parcel",
+    "clean": "rm -rf dist/*"
   },
   "author": "",
   "license": "ISC",
