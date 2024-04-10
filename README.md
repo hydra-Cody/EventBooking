@@ -1,6 +1,11 @@
 #### Frontend Assignmnet BookUsNow
 
 - Tech React,html,css,JS
+Features
+- Almost Responsiv
+- API Integration
+- Lazy loading
+- Horizontal scrolling
 
 ![alt](Screenshot.png)
 [https://food-zjio.vercel.app/](https://food-zjio.vercel.app/)
