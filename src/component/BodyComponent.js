@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import RecommendedCard from "./RecommendedCard";
+import UpcomingCard from './UpcomingCard';
 import Loader from './LoaderComponent'
 
 const Body = () => {
@@ -49,7 +50,7 @@ const Body = () => {
                 </div>
             </div>
             <div>
-                <h3>Recommended shows</h3>
+                <h3>Recommended shows ➡</h3>
                 <div className="recommended">
                     {recommendedShow.map((event, index) => (
                         <RecommendedCard event={event} index={index} />
@@ -57,10 +58,10 @@ const Body = () => {
                 </div>
             </div>
             <div>
-                <h3>Upcoming events</h3>
-                <div className="recommended">
+                <h3>Upcoming events ➡</h3>
+                <div className="upcoming">
                     {upcomingEvent.map((event, index) => (
-                        <RecommendedCard event={event} index={index} />
+                        <UpcomingCard event={event} index={index} />
                     ))}
                 </div>
                 {isLoading && <Loader />}
