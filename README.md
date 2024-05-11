@@ -17,3 +17,7 @@ To run localy
 To build 
 - npm run-script build
 ```
+
+## Event Booking Backend
+- https://github.com/anuragdw710/EventBackend
+ 
