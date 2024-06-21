@@ -291,3 +291,25 @@ body {
   padding: 10px;
   font-weight: bold;
 }
+
+.lodding-svg {
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  margin: auto;
+}
+
+.shimmer-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shimmer-element {
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(-60deg, #0000 10%, #0005, #0000 70%) right/300%
+    100%;
+  background-repeat: no-repeat;
+  animation: shimmer 2.5s infinite;
+  background-color: #f1f1f1;
+}

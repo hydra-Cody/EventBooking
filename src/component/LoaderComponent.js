@@ -1,4 +1,10 @@
 const Loader = () => {
-    return <div>Loading.....</div>
+    return <div className="shimmer-card">
+        <div className="shimmer-element" />
+        <div className="shimmer-element" />
+        <div className="shimmer-element" />
+        <div className="shimmer-element" />
+
+    </div>
 }
 export default Loader;
