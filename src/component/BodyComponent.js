@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
+
 import RecommendedCard from "./RecommendedCard";
 import UpcomingCard from './UpcomingCard';
 import Loader from './LoaderComponent'
@@ -46,7 +49,24 @@ const Body = () => {
     return (
         <div className="middle-box">
             <div className="body">
-                <img src={'https://drive.google.com/thumbnail?id=1hFKPSETzU0K0U9pgcpcvoVk0XCEJxQ8k'} className="banner" ></img>
+                <Carousel
+                    showArrows={true}
+                    autoPlay={true}
+                    infiniteLoop={true}
+                    showThumbs={false}
+                    showStatus={false}
+                    interval={3000}
+                >
+                    <div>
+                        <img src="https://drive.google.com/thumbnail?id=1hFKPSETzU0K0U9pgcpcvoVk0XCEJxQ8k" className="banner" alt="Event 1" />
+                    </div>
+                    <div>
+                        <img src="https://drive.google.com/thumbnail?id=1hFKPSETzU0K0U9pgcpcvoVk0XCEJxQ8k" className="banner" alt="Event 2" />
+                    </div>
+                    <div>
+                        <img src="https://drive.google.com/thumbnail?id=1hFKPSETzU0K0U9pgcpcvoVk0XCEJxQ8k" className="banner" alt="Event 3" />
+                    </div>
+                </Carousel>
                 <div className="heading">
                     <h1>Discover Exciting Events Happening Near You-Stay Tuned for Update</h1>
                     <p>Book now and get 20 % off Limited Time offer </p>
