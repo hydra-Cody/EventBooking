@@ -4,6 +4,7 @@ import HeaderCompoenet from './component/HeaderComponent'
 import Body from './component/BodyComponent'
 import Footer from './component/FooterComponent'
 import InformationBar from "./component/InformationBar";
+import AccordionAndReview from "./component/AccordionAndReview
 
 /*
            Header
@@ -27,6 +28,7 @@ const AppLayout = () => {
             <InformationBar />
             <HeaderCompoenet />
             <Body />
+            <AccordionAndReview />
             <Footer />
         </>
     )
