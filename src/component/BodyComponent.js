@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
 
@@ -10,23 +10,23 @@ const Body = () => {
     const [recommendedShow, setRecommendedShow] = useState([]);
     const [recommendedLoader, setrecommendedLoader] = useState(true);
     const [upcomingEvent, setupcomingEvent] = useState([]);
-    const [currentPage, setCurrentPage] = useState(1);
     const [isLoading, setIsLoading] = useState(false);
+    const currentPageRef = useRef(1);
 
     useEffect(() => {
         getData();
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-    const handleScroll = async () => {
-        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+    const handleScroll = useCallback(async () => {
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100 && currentPageRef.current < 5 && !isLoading) {
             setIsLoading(true);
-            const newEvent = await fetchData(currentPage + 1);
+            const newEvent = await fetchData(currentPageRef.current + 1);
             setupcomingEvent((prevEvent) => [...prevEvent, ...newEvent]);
-            setCurrentPage((prevPage) => prevPage + 1);
+            currentPageRef.current += 1;
             setIsLoading(false);
         }
-    };
+    }, [isLoading]);
 
     async function fetchData(pageNumber) {
         const response = await fetch(`https://gg-backend-assignment.azurewebsites.net/api/Events?code=FOX643kbHEAkyPbdd8nwNLkekHcL4z0hzWBGCd64Ur7mAzFuRCHeyQ==&page=${pageNumber}&type=upcoming`);
