@@ -201,7 +201,8 @@ body {
 }
 
 .upcoming-text-left,
-.recommended-text-left {
+.recommended-text-left,
+.upcoming-text-bottom {
   font-size: 10px;
 }
 .upcoming-text-right,
@@ -220,6 +221,9 @@ body {
 .upcoming-des {
   display: flex;
   justify-content: space-between;
+}
+.upcoming-text-bottom {
+  text-align: center;
 }
 
 .date {
