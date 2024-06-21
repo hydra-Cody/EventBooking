@@ -156,7 +156,8 @@
 }
 
 .recommended-card:hover {
-  transform: scale(1.05);
+  transform: rotateY(180deg) scale(1.05); /* Rotate and scale */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow */
 }
 
 /* upcoming shows */
@@ -209,6 +210,9 @@
 .upcoming-card:hover,
 .recommended-card:hover {
   cursor: pointer;
+}
+.upcoming-card:hover {
+  transform: scale(1.05);
 }
 
 .show-text {
