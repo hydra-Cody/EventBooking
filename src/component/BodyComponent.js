@@ -11,7 +11,7 @@ const Body = () => {
     const [recommendedLoader, setrecommendedLoader] = useState(true);
     const [upcomingEvent, setupcomingEvent] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         getData();
@@ -19,7 +19,7 @@ const Body = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
     const handleScroll = async () => {
-        if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100 && !isLoading) {
             setIsLoading(true);
             const newEvent = await fetchData(currentPage + 1);
             setupcomingEvent((prevEvent) => [...prevEvent, ...newEvent]);
