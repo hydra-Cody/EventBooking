@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import HeaderCompoenet from './component/HeaderComponent'
 import Body from './component/BodyComponent'
 import Footer from './component/FooterComponent'
+import InformationBar from "./component/InformationBar";
 
 /*
            Header
@@ -23,6 +24,7 @@ import Footer from './component/FooterComponent'
 const AppLayout = () => {
     return (
         <>
+            <InformationBar />
             <HeaderCompoenet />
             <Body />
             <Footer />

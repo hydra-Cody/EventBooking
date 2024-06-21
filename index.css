@@ -251,3 +251,11 @@
   margin-top: auto;
   margin-bottom: 0px;
 }
+
+.information-bar {
+  background-color: #ffcc00;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
