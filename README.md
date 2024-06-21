@@ -1,6 +1,8 @@
 ## Links
 
 - Live [https://food-zjio.vercel.app/](https://food-zjio.vercel.app/)
+- Backend [https://github.com/anuragdw710/EventBackend](https://github.com/anuragdw710/EventBackend)
+- Frontend [https://github.com/anuragdw710/EventBooking](https://github.com/anuragdw710/EventBooking)
 
 ## BookUsNow
 
@@ -37,13 +39,10 @@ Pages:
 
 ```
 To run localy
-- git clone https://github.com/anuragdw710/Food.git
+- git clone https://github.com/anuragdw710/EventBooking.git
+- cd EventBooking
 - npm install
 - npx parcel index.html
 To build
 - npm run-script build
 ```
-
-## Event Booking Backend
-
-- https://github.com/anuragdw710/EventBackend
