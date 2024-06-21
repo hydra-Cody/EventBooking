@@ -19,7 +19,7 @@ const Body = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
     const handleScroll = async () => {
-        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100 && !isLoading) {
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
             setIsLoading(true);
             const newEvent = await fetchData(currentPage + 1);
             setupcomingEvent((prevEvent) => [...prevEvent, ...newEvent]);
