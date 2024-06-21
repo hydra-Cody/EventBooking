@@ -15,12 +15,12 @@ const RecommendedCard = ({ event, index }) => {
                 className="recommended-img" ></img>
             <div className="recommended-text">
                 <div className="recommended-text-left">
-                    <h3>{event.eventName}</h3>
-                    <h4>{event.cityName}</h4>
+                    <p>{event.eventName}</p>
+                    <p>{event.cityName}</p>
                 </div>
                 <div className="recommended-text-right">
-                    <h4>{formate(event.date)}</h4>
-                    <h4>{event.weather} | {Math.round(event.distanceKm)} KM </h4>
+                    <p>{formate(event.date)}</p>
+                    <p>{event.weather} | {Math.round(event.distanceKm)} KM </p>
                 </div>
             </div>
 

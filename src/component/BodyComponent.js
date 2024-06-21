@@ -41,24 +41,24 @@ const Body = () => {
     }
 
     return (
-        <div >
+        <div className="middle-box">
             <div className="body">
                 <img src={'https://drive.google.com/thumbnail?id=1hFKPSETzU0K0U9pgcpcvoVk0XCEJxQ8k'} className="banner" ></img>
                 <div className="heading">
                     <h1>Discover Exciting Events Happening Near You-Stay Tuned for Update</h1>
-                    <p>This package serves as the entry point to the DOM and server renderers for React. It is intended to be paired with the generic React package</p>
+                    <p>Book now and get 20 % off Limited Time offer </p>
                 </div>
             </div>
-            <div>
-                <h3>Recommended shows ➡</h3>
+            <div className="recommended-box">
+                <p className="show-text">Recommended shows</p>
                 <div className="recommended">
                     {recommendedShow.map((event, index) => (
                         <RecommendedCard event={event} index={index} />
                     ))}
                 </div>
             </div>
-            <div>
-                <h3>Upcoming events ➡</h3>
+            <div className="upcoming-box">
+                <p className="show-text">Upcoming events</p>
                 <div className="upcoming">
                     {upcomingEvent.map((event, index) => (
                         <UpcomingCard event={event} index={index} />
