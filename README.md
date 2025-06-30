@@ -1,7 +1,7 @@
 ## Links
 
 - Live [https://food-zjio.vercel.app/](https://food-zjio.vercel.app/)
-- Backend [[https://github.com/anuragdw710/EventBackend](https://github.com/anuragdw710/EventBackend)](https://github.com/hydra-Cody/EventbookingBackend)
+- Backend [[https://github.com/anuragdw710/EventBackend]](https://github.com/hydra-Cody/EventbookingBackend)
 - Frontend [https://github.com/anuragdw710/EventBooking](https://github.com/anuragdw710/EventBooking)
 
 ## BookUsNow
