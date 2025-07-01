@@ -70,18 +70,6 @@ bookings.
 
 10. Set up a system to prevent multiple ticket purchases for the same seat within an event.
 
-## Server (Node.js)
-1. Establish a connection to a database to store and manage event data, patron information, and ticket
-bookings.
-2. Implement logic to generate unique booking references for each successful ticket purchase.
-3. Design a module responsible for sending email notifications to patrons and administrators.
-4. Develop a module to handle and securely store patron passwords.
-5. Create a utility function to process and format event data before sending it to the frontend.
-6. Implement logic to read and write data to the database asynchronously to prevent blocking operations.
-7. Utilize a module for reading and writing data to log files efficiently.
-8. Design a module to handle potential errors gracefully and provide informative error messages.
-9. Structure the codebase using modules and functions to ensure maintainability and readability.
-10. Incorporate a robust error handling mechanism to manage database connection failures gracefully.
 
 ## Frontend (React.js)
 1. Develop a user-friendly interface for browsing and searching available events.
@@ -96,19 +84,3 @@ purchase.
 9. Ensure that form inputs are validated before submission to prevent invalid data from reaching the backend.
 10. Design a comprehensive error handling system to gracefully display error messages to the patron.
 
-## Database (MySQL)
-1. Design a database schema to store event information, including venue details, event dates, and times.
-2. Create tables to efficiently manage patron data, including encrypted passwords and contact
-information.
-3. Implement relationships between tables to link events, venues, patrons, and ticket bookings
-effectively.
-4. Define appropriate data types for each attribute in the tables, ensuring data integrity and efficiency.
-5. Write queries to retrieve and filter event data based on various criteria such as date, location, or genre.
-6. Develop queries to retrieve and manage patron booking information, including past and upcoming
-events.
-7. Implement database constraints to ensure data consistency and prevent data anomalies.
-8. Optimize database queries for performance efficiency, especially for operations involving large
-datasets.
-9. Create indexes on relevant columns to speed up data retrieval and improve query performance.
-Implement a mechanism to back up and restore the database to prevent data loss in case of system
-failures.
