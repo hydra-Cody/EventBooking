@@ -52,23 +52,7 @@ To build
 You've been tasked to develop a streamlined e-ticketing solution for concerts, sporting events, and theater
 performances. This service aims to revolutionize the ticket purchasing process, offering a smooth and secure
 way for patrons to secure their spots at sought-after events.
-## Backend (Express.js)
-1. Design API endpoints to manage events, each with details like name, date, time, venue, and ticket
-availability.
-2. Implement authentication and authorization to differentiate between regular patrons and
-administrators.
-3. Enable patrons to browse available events, view event details, and select specific seats.
-4. Develop a secure checkout process for ticket purchase using simulated payment integration.
-5. Create a dashboard for administrators to add new events, update event details, and manage ticket
-inventory.
-6. Allow patrons to receive email notifications for ticket confirmations and event updates.
-7. Implement a mechanism to log all API requests and responses for debugging and monitoring
-purposes.
-8. Ensure that API endpoints are well-documented using a tool like Swagger.
-9. Restrict patron access to certain actions like modifying event details or managing other patron's
-bookings.
 
-10. Set up a system to prevent multiple ticket purchases for the same seat within an event.
 
 
 ## Frontend (React.js)
