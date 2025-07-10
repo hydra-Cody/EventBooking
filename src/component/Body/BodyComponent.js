@@ -4,8 +4,8 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carous
 
 import RecommendedCard from "./RecommendedCard";
 import UpcomingCard from './UpcomingCard';
-import Loader from './LoaderComponent';
-import AccordionAndReview from "./AccordionAndReview";
+import Loader from '../Util/LoaderComponent';
+import AccordionAndReview from './AccordionAndReview'
 
 const Body = () => {
     const [recommendedShow, setRecommendedShow] = useState([]);

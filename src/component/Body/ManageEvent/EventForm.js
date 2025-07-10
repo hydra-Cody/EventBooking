@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../CSS/EventDashboard.css"// 👈 Add this line if you're using an external CSS file
+import "../../../CSS/EventDashboard.css"// 👈 Add this line if you're using an external CSS file
 
 const EventForm = ({ event, onCancel, onSave, editable, onEdit }) => {
     const [formData, setFormData] = useState(event || {});

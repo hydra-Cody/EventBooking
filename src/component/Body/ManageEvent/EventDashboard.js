@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import EventList from "./EventList";
 import EventForm from "./EventForm";
-import dummyEvents from "../static/dummyEvents";
-import "../CSS/EventDashboard.css"; // 👈 include the CSS file
+import dummyEvents from "../../../static/dummyEvents";
+import "../../../CSS/EventDashboard.css"; // 👈 include the CSS file
 
 const EventDashboard = () => {
     const [events, setEvents] = useState([]);

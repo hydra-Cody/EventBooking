@@ -1,7 +1,7 @@
 
 
 import React from 'react';
-import acc from '../static/acc'
+import acc from '../../static/acc'
 import Accordion from "./Accordion";
 import ReviewCarousel from './ReviewCarousel';
 
