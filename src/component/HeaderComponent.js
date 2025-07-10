@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Title from "./TitleComponent";
+import { Link } from "react-router-dom";
 
 
 const HeaderCompoenet = () => {
@@ -14,7 +15,7 @@ const HeaderCompoenet = () => {
     async function getlocation(latitude, longitude) {
         const data = await fetch(`https://geocode.maps.co/reverse?lat=${latitude}&lon=${longitude}&api_key=66162829491d6783545083raj442c0e`)
         const json = await data.json();
-        setlocation(json.address.town)
+        setlocation(json.address.town);
     }
 
     return (
@@ -36,8 +37,19 @@ const HeaderCompoenet = () => {
                     <input type="text" placeholder="Search" className="search" />
                 </div>
                 <div>
-                    <button className="btn-fav">🩶 Faviorites</button>
-                    <button className="btn-singin">Signin</button>
+                    <nav className="space-x-4">
+                        <Link to="/add-event">
+                            <button className="btn-fav">
+                                Add Event
+                            </button>
+                        </Link>
+                        <Link to="/favorites">
+                            <button className="btn-fav">🩶 Faviorites</button>
+                        </Link>
+                        <Link to="/login">
+                            <button className="btn-singin">Signin</button>
+                        </Link>
+                    </nav>
                 </div>
             </div>
             <div className="bottom-header">

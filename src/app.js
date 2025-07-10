@@ -1,40 +1,40 @@
 import React from "react";
+import {
+    createBrowserRouter,
+    Outlet,
+    RouterProvider,
+} from "react-router";
 import ReactDOM from "react-dom/client";
 import HeaderCompoenet from './component/HeaderComponent'
 import Body from './component/BodyComponent'
 import Footer from './component/FooterComponent'
 import InformationBar from "./component/InformationBar";
-import AccordionAndReview from "./component/AccordionAndReview
-
-/*
-           Header
-           -Logo
-           -List Items
-           Body
-           -Serach Bar
-           - RestrauntList
-           - RestrauntCard
-           -Image
-           -Name
-           -Rating
-           -Cusines
-           Footer
-           -Links
-           -copyright
-*/
+import EventDashboard from "./component/EventDashboard";
 const AppLayout = () => {
     return (
         <>
+
             <InformationBar />
+
             <HeaderCompoenet />
-            <Body />
-            <AccordionAndReview />
+            <Outlet />
             <Footer />
         </>
     )
 }
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <AppLayout />,
+        children: [
+            { path: "/", element: <Body /> },
+            { path: "/add-event", element: <EventDashboard /> }
+        ],
+
+    },
+]);
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<AppLayout />);
+root.render(<RouterProvider router={router} />);
